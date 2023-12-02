@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100%;
+}
+body {
+   font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    line-height: 1.6;
+}
+main {
+    align-items: center;
+    background-image: radial-gradient(
+            hsl(0 30% 90% / 0.7),
+            hsl(0 40% 50% / 0.5)
+        ),
+        url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(0 25% 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+h1 {
+    color: hsl(0 70% 90%);
+    text-shadow: 0px 0px 8px hsl(0 10% 10% / 0.8);
+}
+.card {
+    background-color: hsl(0 100% 95%);
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px hsl(0 10% 10% / 0.8);
+    max-width: 400px;
+    padding: 40px;
+    text-align: center;
+}
+#quote::before {
+    content: open-quote;
+}
+#quote::after {
+    content: close-quote;
+}
+#author {
+    font-weight: 750;
+}
+
+button {
+    background-color: hsl(0 20% 30%);
+    border: none;
+    border-radius: 4px;
+    color: hsl(0 100% 95%);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
